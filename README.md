@@ -4,11 +4,16 @@ CodingDojo-20120910-RadioLondres.hs
 Coding Dojo du 10 Septembre 2012 avec des illustres agilistes
 parisiens.
 
-Sur une ubuntu, j'ai les packages :
+Lancer le main :
+`runghc Main.hs Je < texte`
 
-* ghc (7.4.1)
+Sur une debian ou sur ubuntu, j'ai les packages :
+
+* ghc (7.4.x) (x=5 sur debian, 1 sur ubuntu)
 * libghc-random-dev
 
-Pour faire marcher le main :
-`runghc Main.hs Je < texte`
+Et pour faire marcher le main, j'ai du importer *System.Random* à la place de *Random*.
+Par conséquent, il faut appliquer la commande suivante :
+`sed -i s,Random,System.Random,g Main.hs`
+
 

@@ -1,7 +1,7 @@
 module Main
 where
 import System.Environment
-import System.Random
+import Random
 import RadioLondres
 
 main = do
